@@ -1,24 +1,10 @@
-# TSDX React w/ Storybook User Guide
-
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
-
-> This TSDX setup is meant for developing React component libraries (not apps!) that can be published to NPM. If you’re looking to build a React-based app, you should use `create-react-app`, `razzle`, `nextjs`, `gatsby`, or `react-static`.
-
-> If you’re new to TypeScript and React, checkout [this handy cheatsheet](https://github.com/sw-yx/react-typescript-cheatsheet/)
-
 ## Commands
 
-TSDX scaffolds your new library inside `/src`, and also sets up a [Parcel-based](https://parceljs.org) playground for it inside `/example`.
-
-The recommended workflow is to run TSDX in one terminal:
+Run your project
 
 ```bash
 npm start # or yarn start
 ```
-
-This builds to `/dist` and runs the project in watch mode so any edits you save inside `src` causes a rebuild to `/dist`.
-
-Then run either Storybook or the example playground:
 
 ### Storybook
 
@@ -27,10 +13,6 @@ Run inside another terminal:
 ```bash
 yarn storybook
 ```
-
-This loads the stories from `./stories`.
-
-> NOTE: Stories should reference the components as if using the library, similar to the example playground. This means importing from the root project directory. This has been aliased in the tsconfig and the storybook webpack config as a helper.
 
 ### Example
 
@@ -41,8 +23,6 @@ cd example
 npm i # or yarn to install dependencies
 npm start # or yarn start
 ```
-
-The default example imports and live reloads whatever is in `/dist`, so if you are seeing an out of date component, make sure TSDX is running in watch mode like we recommend above. **No symlinking required**, we use [Parcel's aliasing](https://parceljs.org/module_resolution.html#aliases).
 
 To do a one-off build, use `npm run build` or `yarn build`.
 
@@ -88,6 +68,44 @@ tsconfig.json
 #### React Testing Library
 
 We do not set up `react-testing-library` for you yet, we welcome contributions and documentation on this.
+
+
+### Versionamento
+
+#### Primeiro versionamento de um projeto
+
+##### GIT
+
+Crie um novo repositório no github, por exemplo `meu-repositorio`
+
+##### Windows
+
+Abra o terminal powershell e execute os comandos abaixo:
+
+```bash
+  git init
+  git add .
+  git commit -m "First commit"
+  git branch -M main
+  git remote add origin git@github.com:beaaax5/meu-repositorio.git
+  git push -u origin main
+```
+#### Versionamentos seguintes
+
+### Windows
+
+Abra o terminal powershell e execute os comandos abaixo:
+
+```bash
+  git pull
+  git add .
+  git commit -m "SUA MENSAGEM"
+  git push
+```
+
+
+
+
 
 ### Rollup
 
