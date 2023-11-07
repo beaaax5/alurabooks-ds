@@ -6,7 +6,7 @@ export interface AbBotaoProps {
   tipo?: 'primario' | 'secundario'
   onClick?: () => void
 }
-// o Abbotaoprops = as props que o botao poderá receber, então ela poderá receber um texto e um tipo, primario ou secundario
+
 
 
 const BotaoEstilizado = styled.button<AbBotaoProps>`
@@ -40,5 +40,3 @@ export const AbBotao = ({ text, onClick, tipo = 'primario'} : AbBotaoProps) => {
     {text}
     </BotaoEstilizado>;
 };
-
-// No meu export const AbBotao ele recebrá = ({ text, onClick, tipo = 'primario'} : AbBotaoProps) => --- E no meu meu BotaoEstilizado terá um onClick e um tipo, dentro desse botão, vou ter um texto

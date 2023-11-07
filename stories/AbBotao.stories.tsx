@@ -11,7 +11,7 @@ export default{
 
 } as ComponentMeta<typeof AbBotao>
 
-const Template: ComponentStory<typeof AbBotao> = (args) => <AbBotao {...args}/> // Eu recebo os argumentos e encaminhos os argumentsos para AbBotao
+const Template: ComponentStory<typeof AbBotao> = (args) => <AbBotao {...args}/> 
 
 export const Primario = Template.bind({})
 
